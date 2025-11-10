@@ -5,35 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Crofts | Home</title>
     <link rel="stylesheet" href="./styles/mainstyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Metal+Mania&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="roboto-300 lightgrey">
     <section id="navigation">
-        <nav class="container navbar grey">
-            <img src="./Images/a.png" height="20px">
-            <button class="btn nav-toggler">
-                -----
-            </button>
-            <div class="container navbar-outer navbar-collapse show" id="navbartoggle">
-                <ul class="navbar-nav">
-                    <li>
-                        <a href="#" class="nav-btn nav-btn-active">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-btn">Web Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-btn">Game Portfolio</a>
-                    </li>
+        <header>
+            <nav class="container navbar grey roboto-500">
+                <img src="./Images/a.png" height="20px">
+                <button class="btn nav-toggler">
+                    -----
+                </button>
+                <div class="container navbar-outer navbar-collapse" id="navbartoggle">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#" class="nav-btn nav-btn-active">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-btn">Web Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-btn">Game Portfolio</a>
+                        </li>
+                        
+                    </ul>
                     
-                </ul>
-                
-                <form>
-                    <input class="searchbar" placeholder="Search"></input>
-                    <button class="btn btn-search">Search</button>
-                </form>
-            </div>
-        </nav>
+                    <form>
+                        <input class="searchbar" placeholder="Search"></input>
+                        <button class="btn btn-search">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
     </section>
+
+    <!-- About Me Section -->
+    <section id="AboutMe" class="lightgrey">
+        <div class="about-me-container">
+            <img class="profile" src="./Images/Adam-Crofts.jpg" height="250vw">
+            <h1 class="title-text">Adam Crofts</h1>
+            <div class="about-me-text-holder">
+                <p class="about-me-text">
+                    I'm a graduate of Games Development from Liverpool John Moores University.
+                    I have 6 years of experience in Unreal Engine, from both during and after my time at University.
+                    After finishing University, I worked at Scenegraph Studios for 2 months, before completing a PGCE in Computer Science.
+                </p>
+            </div>
+            <hr>
+            <!-- Benefits -->
+             <div class="benefits-section">
+                <div class="benefits-list-container">
+                    <!-- First Benefit -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <img src="./Images/controller.svg" height="75px">
+                        </div>
+                        <h3 class="benefit-title">
+                            Excellent problem solver
+                        </h3>
+                        <p class="benefit-description">
+                            I enjoy the thrill of solving puzzles, and I view any problem in 
+                            programming a matter of effective problem solving. 
+                            I won't stop working on something until it is done to the best of my ability.
+                        </p>
+                    </div>
+
+                    <!-- Second Benefit -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <img src="./Images/feedback.svg" height="75px">
+                        </div>
+                        <h3 class="benefit-title">
+                            Effective Communication
+                        </h3>
+                        <p class="benefit-description">
+                            I am always willing to ask for help or clarification if I don't understand something. 
+                            Along with this, I take feedback very well and always implement what I can into my work!
+                        </p>
+                    </div>
+
+                    <!-- Third Benefit -->
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <img src="./Images/pencil.svg" height="75px">
+                        </div>
+                        <h3 class="benefit-title">
+                            Reach Deadlines on time
+                        </h3>
+                        <p class="benefit-description">
+                            Throughout my life in schools and in work I have had deadlines to reach, 
+                            which I have always managed to complete my work with plenty of time to spare all while 
+                            having time to myself for my hobbies!
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Web Portfolio Section -->
+    <section id="WebPortfolio" class="lightgrey">
+        <div class="carousel-outer">
+            <h2 style="font-size: xx-large; text-align: center;">Web Portfolio</h2>
+            <div class="carousel-main">
+                <div class="carousel-inner">
+                    <div class="carousel-item active roboto-300">
+                        <img class="carousel-img" src="./Images/GameDev/Extinguisher.png">
+                        <div class="carousel-caption">
+                            <h3>Fire Extinguisher Simulation</h3>
+                            <p>Some placeholder explanation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Games Portfolio Section -->
+    <section id="GamesPortfolio" class="lightgrey">
+        <div class="carousel-outer">
+            <h2 style="font-size: xx-large; text-align: center;">Games Portfolio</h2>
+            <div class="carousel-main">
+                <div class="carousel-inner">
+                    <div class="carousel-item active roboto-300">
+                        <img class="carousel-img" src="./Images/GameDev/Extinguisher.png">
+                        <div class="carousel-caption">
+                            <h3>Fire Extinguisher Simulation</h3>
+                            <p>Some placeholder explanation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
